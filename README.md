@@ -69,7 +69,7 @@ https://www.kaggle.com/datasets/shivamb/netflix-shows/data
 1. Clone the repo  
 2. Open `NETFLIX_DA.ipynb` in Jupyter or Colab
 3. If you want you can run it in other IDEs like Pycharm and VSCode , just run the `NETFLIX_DA.py` file
-4. 4.Just uncomment each analysis function that you want to run
+4. Just uncomment each analysis function that you want to run
 
 ## 🙋‍♂️ Author
 
