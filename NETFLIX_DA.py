@@ -172,6 +172,9 @@ def analyze_netflix_genres_over_years(df):
     ax.set_axisbelow(True)
     ax.grid(True, axis="x", color="0.6", dashes=(2, 4))
     plt.show()
+
+# Part 05 Analyze Frequent Collaborators in NetFlix Over Years
+
 def analyze_frequent_netflix_collaborators(df):
     df_copy = df.copy()
     df_copy["cast"] = df_copy["cast"].str.split(",")
@@ -191,6 +194,8 @@ def analyze_frequent_netflix_collaborators(df):
     plt.title("Most Frequent Collaborators (Actors)",fontsize=20,pad=20)
     plt.show()
 
+# Part 06 Analyze NetFlix Content Freshness Over Years
+
 def analyze_netflix_content_freshness(df):
     df_copy = df.copy()
     df_copy["date_added"] = df["date_added"].str.strip()
@@ -208,6 +213,7 @@ def analyze_netflix_content_freshness(df):
     axis.set_ylabel("Year", fontsize=12)
     heatmap = sns.heatmap(pivot_table,annot=True,fmt=".0f",linewidth="1",cmap="plasma",linecolor="white",annot_kws={"size":10},ax=axis)
     plt.show()
+    
 if __name__ == "__main__":
     main_df = pd.read_csv("data/netflix_data.csv")
     analyze_netflix_trend(main_df)
